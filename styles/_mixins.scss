@@ -1,0 +1,5 @@
+@mixin underlined-text{
+    color: white;
+    text-decoration: underline map-get($Colors, "bright-green") 4px;
+    text-underline-offset: 0.5rem;
+}

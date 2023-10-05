@@ -17,7 +17,7 @@ body {
   height: 100vh;
   border-radius: 0 0 50rem 50rem;
   z-index: -10;
-  transform: scale(600%) translate(0, -20rem);
+  transform: scale(600%) translate(0, -18.4rem);
 }
 .section-1 .spring-1 {
   position: absolute;
@@ -41,6 +41,40 @@ body {
   margin-right: 10.625rem;
   margin-left: auto;
   margin-top: 4.375rem;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: underline hsl(150, 100%, 63%) 4px;
+  text-underline-offset: 0.5rem;
+}
+.section-1 .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.375rem;
+  margin-bottom: 3rem;
+}
+.section-1 .hero-text h2 {
+  color: hsl(276, 100%, 99%);
+  font-family: "Fraunces", serif;
+  font-size: 5rem;
+  width: 40rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section-1 .hero-text span {
+  color: white;
+  text-decoration: underline hsl(150, 100%, 63%) 4px;
+  text-underline-offset: 0.5rem;
+}
+.section-1 .hero-text .hero-button {
+  background-color: hsl(150, 100%, 63%);
+  border: none;
+  width: 10.4375rem;
+  height: 4.1875rem;
+  color: hsl(271, 12%, 34%);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 .section-1 .hero img {
   width: min(70%, 45rem);
