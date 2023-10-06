@@ -78,4 +78,38 @@ body {
 }
 .section-1 .hero img {
   width: min(70%, 45rem);
+}
+
+.section-2 .curve-2 {
+  background-color: hsl(276, 100%, 99%);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -11;
+  transform: translateY(-15rem);
+}
+.section-2 .grid {
+  width: 80%;
+  margin-top: 6rem;
+  margin-inline: auto;
+  gap: 2rem;
+}
+.section-2 span {
+  font-family: "Fraunces", serif;
+  font-size: 1.3rem;
+  border: 1px solid hsl(273, 85%, 13%);
+  border-radius: 50px;
+  padding: 0.5rem 0.9rem;
+}
+.section-2 h2 {
+  font-family: "Fraunces", serif;
+  margin-top: 4.0625rem;
+  margin-bottom: 2.5rem;
+}
+.section-2 p {
+  font-family: "Manrope", sans-serif;
+  color: hsl(271, 12%, 34%);
+  word-break: break-all;
+  word-wrap: break-word;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */

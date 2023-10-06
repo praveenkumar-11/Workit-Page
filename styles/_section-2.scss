@@ -1,0 +1,19 @@
+.section-2{
+    .curve-2{
+        background-color: map-get($Colors, "ghost-white");
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: -11;
+        transform: translateY(-15rem);
+    }
+    .grid{
+        width: 80%;
+        margin-top: 6rem;
+        margin-inline: auto;
+        gap: 2rem;
+    }
+    .col{
+    }
+    @include column;
+}

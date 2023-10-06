@@ -3,3 +3,27 @@
     text-decoration: underline map-get($Colors, "bright-green") 4px;
     text-underline-offset: 0.5rem;
 }
+@mixin titles{
+    font-family: $fraunces;
+}
+@mixin column{ 
+    span{
+        font-family: $fraunces;
+        font-size: 1.3rem;
+        border: 1px solid map-get($Colors, "dark-purple");
+        border-radius: 50px;
+        padding: 0.5rem 0.9rem;
+    }
+    h2{
+        @include titles;
+        margin-top: 4.0625rem;
+        margin-bottom: 2.5rem;
+    }
+    p{
+        font-family: $manrope;
+        color: map-get($Colors, "purplish-grey");
+        word-break: break-all;
+        word-wrap: break-word;
+        font-size: 1.2rem;
+    }
+}
