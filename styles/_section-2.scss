@@ -8,12 +8,11 @@
         transform: translateY(-15rem);
     }
     .grid{
-        width: 80%;
-        margin-top: 6rem;
-        margin-inline: auto;
-        gap: 2rem;
-    }
-    .col{
+        margin-top: 3.75rem;
+        margin-inline: 1rem;
+        .col{
+            width: 100%;
+        }
     }
     @include column;
 }
