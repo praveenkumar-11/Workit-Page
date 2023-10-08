@@ -1,17 +1,16 @@
 .section-2{
     .curve-2{
+        @include curve;
         background-color: map-get($Colors, "ghost-white");
-        height: 100vh;
-        width: 100%;
-        position: absolute;
+        background-color: red;
         z-index: -11;
-        transform: translateY(-15rem);
+        transform: scale(600%) translate(0, -17rem);
     }
     .grid{
         margin-top: 3.75rem;
-        margin-inline: 1rem;
         .col{
             @include column;
+            margin-bottom: 2.8125rem;
         }
     }
 }

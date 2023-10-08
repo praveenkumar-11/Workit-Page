@@ -1,0 +1,25 @@
+.section-3{
+    margin-top: 7rem;
+    .founder-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: min(80%, 20rem);
+            height: auto;
+        }
+    }
+
+    .founder-text{
+        background-color: map-get($Colors, "dark-purple");
+        h2{
+            @include titles;
+        }
+        p{
+            @include paragraph;
+        }
+        button{
+            @include button;
+        }
+    }
+}
