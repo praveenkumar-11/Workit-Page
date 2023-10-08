@@ -69,7 +69,7 @@
   background-color: hsl(150, 100%, 63%);
   border: none;
   width: 8.75rem;
-  height: 3.5rem;
+  height: 3.5625rem;
   color: hsl(273, 85%, 13%);
   font-style: "Manrope", sans-serif;
   font-size: 1.2rem;
@@ -90,7 +90,6 @@
   transform: scale(600%) translate(0, -21.4rem);
   overflow-x: hidden;
   background-color: hsl(276, 100%, 99%);
-  background-color: red;
   z-index: -11;
   transform: scale(600%) translate(0, -17rem);
 }
@@ -122,34 +121,41 @@
 .section-3 {
   margin-top: 7rem;
 }
-.section-3 .founder-container {
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
 .section-3 .founder-container img {
   width: min(80%, 20rem);
   height: auto;
+  margin-left: 2.4rem;
 }
 .section-3 .founder-text {
   background-color: hsl(273, 85%, 13%);
+  margin-inline: 0.5rem;
+  text-align: center;
+  z-index: 2;
+  transform: translate(0, -3.6rem);
 }
 .section-3 .founder-text h2 {
   font-family: "Fraunces", serif;
   color: white;
+  padding-top: 2.8125rem;
 }
 .section-3 .founder-text p {
   font-family: "Manrope", sans-serif;
   color: hsl(271, 12%, 34%);
   font-size: 1.2rem;
+  color: white;
+  margin-top: 2.1875rem;
+  margin-inline: 1.5rem;
 }
 .section-3 .founder-text button {
   background-color: hsl(150, 100%, 63%);
   border: none;
   width: 8.75rem;
-  height: 3.5rem;
+  height: 3.5625rem;
   color: hsl(273, 85%, 13%);
   font-style: "Manrope", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
+  margin-top: 1.875rem;
+  width: 11.25rem;
+  margin-bottom: 2.8125rem;
 }/*# sourceMappingURL=style.css.map */

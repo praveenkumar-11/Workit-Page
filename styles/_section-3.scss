@@ -1,25 +1,35 @@
 .section-3{
     margin-top: 7rem;
     .founder-container{
-        display: block;
-        justify-content: center;
-        align-items: center;
         img{
             width: min(80%, 20rem);
             height: auto;
+            margin-left: 2.4rem;
         }
     }
 
     .founder-text{
         background-color: map-get($Colors, "dark-purple");
+        margin-inline: 0.5rem;
+        text-align: center;
+        //height: 24.5rem;
+        z-index: 2;
+        transform: translate(0, -3.6rem);
         h2{
             @include titles;
+            padding-top: 2.8125rem;
         }
         p{
             @include paragraph;
+            color: white;
+            margin-top: 2.1875rem;
+            margin-inline: 1.5rem;
         }
         button{
             @include button;
+            margin-top: 1.875rem;
+            width: 11.25rem;
+            margin-bottom: 2.8125rem;
         }
     }
 }
