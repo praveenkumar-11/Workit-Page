@@ -7,12 +7,31 @@
         //top: 40rem;
     }
     .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin-top: 3.75rem;
-        flex-wrap: wrap;
         gap: 2.5rem;
+        @media screen and (min-width: map-get($breakpoints, "desktop")){
+            flex-direction: row;
+        }
         .col{
+            display: flex;
+            flex-direction: column;
             @include column;
-            margin-bottom: 2.8125rem;
+            gap: 2.8125rem;
+            @media screen and (min-width: map-get($breakpoints, "tablet")){
+                text-align: left;
+                flex-direction: row;
+                align-items: center;
+                margin-inline: 5rem;
+            }
+            @media screen and (min-width: map-get($breakpoints, "desktop")){
+                text-align: center;
+                flex-direction: column;
+                margin: unset;
+            }
         }
     }
 }

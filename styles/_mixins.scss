@@ -57,3 +57,8 @@
         @include paragraph;
     }
 }
+
+$breakpoints: (
+    "tablet": 45em,
+    "desktop": 75em
+);
