@@ -1,6 +1,6 @@
 .section-1{
     .curve{
-        @include curve;
+        //@include curve;
     }
     .spring-1{
         position: absolute;
@@ -13,7 +13,7 @@
         float: right;
         left: 92vw;
         top: 23.125rem;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     header{
         display: flex;

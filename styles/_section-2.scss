@@ -1,9 +1,10 @@
 .section-2{
     .curve-2{
-        @include curve;
-        background-color: map-get($Colors, "ghost-white");
-        z-index: -11;
-        transform: scale(600%) translate(0, -17rem);
+        //@include curve;
+        //background-color: map-get($Colors, "ghost-white");
+        //background-color: red;
+        //z-index: -11;
+        //top: 40rem;
     }
     .grid{
         margin-top: 3.75rem;
