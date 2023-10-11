@@ -5,13 +5,19 @@
 }
 @mixin button{
     background-color: map-get($Colors, "bright-green");
-    border: none;
+    border: 2px solid map-get($Colors, "bright-green");
     width: 8.75rem;
     height: 3.5625rem;
     color: map-get($Colors, "dark-purple");
     font-style: $manrope;
     font-size: 1.2rem;
     font-weight: 500;
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover{
+        background-color: transparent;
+        color: map-get($Colors, "bright-green");
+    }
 }
 @mixin titles{
     font-family: $fraunces;

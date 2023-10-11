@@ -13,7 +13,8 @@
         float: right;
         left: 92vw;
         top: 23.125rem;
-        overflow: hidden;
+        img{
+        }
     }
     header{
         display: flex;
@@ -27,6 +28,11 @@
             margin-left: auto;
             font-size: 1.2rem;
             @include underlined-text;
+            transition: 0.2s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            &:hover{
+                color: map-get($Colors, "bright-green");
+            }
         }
     }
     .hero-text{

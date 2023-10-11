@@ -8,6 +8,8 @@
     }
     .grid{
         margin-top: 3.75rem;
+        flex-wrap: wrap;
+        gap: 2.5rem;
         .col{
             @include column;
             margin-bottom: 2.8125rem;
