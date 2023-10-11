@@ -167,4 +167,11 @@ footer .social-media-btns {
   display: flex;
   gap: 1.6875rem;
   margin-bottom: 6.875rem;
+}
+footer .social-media-btns img {
+  transition: 0.2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+footer .social-media-btns img:hover {
+  filter: invert(73%) sepia(26%) saturate(928%) hue-rotate(92deg) brightness(109%) contrast(115%);
 }/*# sourceMappingURL=style.css.map */
