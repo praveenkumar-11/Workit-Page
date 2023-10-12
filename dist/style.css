@@ -25,11 +25,11 @@ body {
   display: flex;
 }
 .section-1 header img {
-  margin-left: 1rem;
+  margin-left: 10%;
   margin-top: 2.5rem;
 }
 .section-1 header a {
-  margin-right: 1rem;
+  margin-right: 10%;
   margin-top: 2.5rem;
   margin-left: auto;
   font-size: 1.2rem;
@@ -54,9 +54,21 @@ body {
   color: hsl(276, 100%, 99%);
   font-family: "Fraunces", serif;
   font-size: 2.5rem;
-  margin-left: 1rem;
+  width: 20rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 45em) {
+  .section-1 .hero-text h2 {
+    font-size: 4rem;
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-1 .hero-text h2 {
+    font-size: 5rem;
+    width: 40rem;
+  }
 }
 .section-1 .hero-text span {
   color: white;
