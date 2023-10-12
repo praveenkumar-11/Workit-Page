@@ -4,7 +4,10 @@
         img{
             width: min(80%, 20rem);
             height: auto;
-            margin-left: 2.4rem;
+            margin-inline: 2.4rem;
+            @media screen and (min-width: map-get($breakpoints, "tablet")){
+                margin-left: 3rem;
+            }
         }
     }
 
@@ -15,9 +18,16 @@
         //height: 24.5rem;
         z-index: 2;
         transform: translate(0, -3.6rem);
+        @media screen and (min-width: map-get($breakpoints, "tablet")){
+            text-align: left;
+            margin-left: 13rem;
+            margin-right: 2rem;
+            transform: translate(0, -8rem);
+        }
         .founder-headline{
             @include titles;
             padding-top: 2.8125rem;
+            margin-inline: 1.5rem;  
         }
         .founder-para{
             @include paragraph;
@@ -30,6 +40,7 @@
             margin-top: 1.7rem;
             width: 11.25rem;
             margin-bottom: 2.8125rem;
+            margin-inline: 1.5rem;
         }
     }
 }
