@@ -266,8 +266,20 @@ body {
 }
 
 footer {
-  margin-top: 5rem;
+  margin-top: 0rem;
   margin-bottom: 3.125rem;
+}
+@media screen and (min-width: 45em) {
+  footer {
+    transform: translateY(-4rem);
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  footer {
+    transform: translate(0, -10rem);
+    margin-bottom: 0;
+  }
 }
 footer .logo {
   margin-bottom: 3rem;
