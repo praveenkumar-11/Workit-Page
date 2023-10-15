@@ -2,11 +2,14 @@
     margin-top: 7rem;
     .founder-container{
         img{
-            width: min(80%, 20rem);
+            width: min(80%, 25rem);
             height: auto;
             margin-inline: 2.4rem;
             @media screen and (min-width: map-get($breakpoints, "tablet")){
                 margin-left: 3rem;
+            }
+            @media screen and (min-width: map-get($breakpoints, "desktop")){
+                margin-left: 10rem;
             }
         }
     }
@@ -24,23 +27,53 @@
             margin-right: 2rem;
             transform: translate(0, -8rem);
         }
+        @media screen and (min-width: map-get($breakpoints, "desktop")){
+            margin-right: 10rem;
+            margin-left: 28rem;
+            transform: translate(0, -17rem);
+        }
         .founder-headline{
             @include titles;
             padding-top: 2.8125rem;
             margin-inline: 1.5rem;  
+            @media screen and (min-width: map-get($breakpoints, "tablet")){
+                padding-top: 3rem;
+                margin-inline: 3.5rem;
+                font-size: 2.3rem;
+            }  
+            @media screen and (min-width: map-get($breakpoints, "desktop")){
+                padding-top: 4.6875rem;
+                margin-inline: 4.0625rem;
+                font-size: 2.8rem;
+            }
         }
         .founder-para{
             @include paragraph;
-            color: white;
+            color: map-get($Colors, "ghost-white");
             margin-top: 1.7rem;
-            margin-inline: 1.5rem;
+            margin-inline: 1.5rem;  
+            @media screen and (min-width: map-get($breakpoints, "tablet")){
+                margin-inline: 3.5rem;
+                font-size: 1.5rem;
+            }
+            @media screen and (min-width: map-get($breakpoints, "desktop")){
+                margin-inline: 4.0625rem;
+                font-size: 1rem;
+            }
         }
         button{
             @include button;
             margin-top: 1.7rem;
             width: 11.25rem;
             margin-bottom: 2.8125rem;
-            margin-inline: 1.5rem;
+            margin-inline: 1.5rem;  
+            @media screen and (min-width: map-get($breakpoints, "tablet")){
+                margin-inline: 3.5rem;
+            }  
+            @media screen and (min-width: map-get($breakpoints, "desktop")){
+                margin-inline: 4.0625rem;
+                margin-bottom: 4.0625rem;
+            }
         }
     }
 }

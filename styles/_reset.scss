@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-size: 100%;
 }
+*::selection{
+    background-color: map-get($Colors, "bright-green");
+}
 body{
     background-color: gray;
     //overflow-x: hidden;

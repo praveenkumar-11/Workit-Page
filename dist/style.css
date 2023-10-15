@@ -5,6 +5,10 @@
   font-size: 100%;
 }
 
+*::selection {
+  background-color: hsl(150, 100%, 63%);
+}
+
 body {
   background-color: gray;
 }
@@ -131,7 +135,7 @@ body {
 .section-2 .grid .col p {
   font-family: "Manrope", sans-serif;
   color: hsl(271, 12%, 34%);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 45em) {
   .section-2 .grid .col {
@@ -153,13 +157,18 @@ body {
   margin-top: 7rem;
 }
 .section-3 .founder-container img {
-  width: min(80%, 20rem);
+  width: min(80%, 25rem);
   height: auto;
   margin-inline: 2.4rem;
 }
 @media screen and (min-width: 45em) {
   .section-3 .founder-container img {
     margin-left: 3rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-3 .founder-container img {
+    margin-left: 10rem;
   }
 }
 .section-3 .founder-text {
@@ -177,19 +186,52 @@ body {
     transform: translate(0, -8rem);
   }
 }
+@media screen and (min-width: 75em) {
+  .section-3 .founder-text {
+    margin-right: 10rem;
+    margin-left: 28rem;
+    transform: translate(0, -17rem);
+  }
+}
 .section-3 .founder-text .founder-headline {
   font-family: "Fraunces", serif;
   color: white;
   padding-top: 2.8125rem;
   margin-inline: 1.5rem;
 }
+@media screen and (min-width: 45em) {
+  .section-3 .founder-text .founder-headline {
+    padding-top: 3rem;
+    margin-inline: 3.5rem;
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-3 .founder-text .founder-headline {
+    padding-top: 4.6875rem;
+    margin-inline: 4.0625rem;
+    font-size: 2.8rem;
+  }
+}
 .section-3 .founder-text .founder-para {
   font-family: "Manrope", sans-serif;
   color: hsl(271, 12%, 34%);
-  font-size: 1.2rem;
-  color: white;
+  font-size: 1rem;
+  color: hsl(276, 100%, 99%);
   margin-top: 1.7rem;
   margin-inline: 1.5rem;
+}
+@media screen and (min-width: 45em) {
+  .section-3 .founder-text .founder-para {
+    margin-inline: 3.5rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-3 .founder-text .founder-para {
+    margin-inline: 4.0625rem;
+    font-size: 1rem;
+  }
 }
 .section-3 .founder-text button {
   background-color: hsl(150, 100%, 63%);
@@ -211,14 +253,28 @@ body {
   background-color: transparent;
   color: hsl(150, 100%, 63%);
 }
+@media screen and (min-width: 45em) {
+  .section-3 .founder-text button {
+    margin-inline: 3.5rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-3 .founder-text button {
+    margin-inline: 4.0625rem;
+    margin-bottom: 4.0625rem;
+  }
+}
 
+footer {
+  margin-top: 5rem;
+  margin-bottom: 3.125rem;
+}
 footer .logo {
-  margin-bottom: 3.4375rem;
+  margin-bottom: 3rem;
 }
 footer .social-media-btns {
   display: flex;
   gap: 1.6875rem;
-  margin-bottom: 6.875rem;
 }
 footer .social-media-btns img {
   transition: 0.2s;
