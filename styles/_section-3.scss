@@ -25,12 +25,13 @@
             text-align: left;
             margin-left: 13rem;
             margin-right: 2rem;
-            transform: translate(0, -8rem);
+            margin-top: -7rem;
+            //transform: translate(0, -8rem);
         }
         @media screen and (min-width: map-get($breakpoints, "desktop")){
             margin-right: 10rem;
-            margin-left: 28rem;
-            transform: translate(0, -17rem);
+            margin-left: 31rem;
+            //transform: translate(0, -16rem);
         }
         .founder-headline{
             @include titles;
