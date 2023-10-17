@@ -1,14 +1,14 @@
 footer{
-    margin-top: 0rem;
+    margin-top: 3.5rem;
     margin-bottom: 3.125rem;
-    @media screen and (min-width: map-get($breakpoints, "tablet")){
+    /* @media screen and (min-width: map-get($breakpoints, "tablet")){
         transform: translateY(-4rem);
         margin-bottom: 2rem;
     }
     @media screen and (min-width: map-get($breakpoints, "desktop")){
         transform: translate(0, -10rem);
         margin-bottom: 0;
-    }
+    } */
     .logo{
         margin-bottom: 3rem;
         img{

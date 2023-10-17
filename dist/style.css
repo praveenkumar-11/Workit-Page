@@ -218,7 +218,7 @@ body {
 @media screen and (min-width: 45em) {
   .section-3 .founder-text {
     text-align: left;
-    margin-left: 13rem;
+    margin-left: 18rem;
     margin-right: 2rem;
     margin-top: -7rem;
   }
@@ -227,6 +227,7 @@ body {
   .section-3 .founder-text {
     margin-right: 10rem;
     margin-left: 31rem;
+    margin-top: -13rem;
   }
 }
 .section-3 .founder-text .founder-headline {
@@ -260,13 +261,13 @@ body {
 @media screen and (min-width: 45em) {
   .section-3 .founder-text .founder-para {
     margin-inline: 3.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 75em) {
   .section-3 .founder-text .founder-para {
     margin-inline: 4.0625rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .section-3 .founder-text button {
@@ -302,20 +303,16 @@ body {
 }
 
 footer {
-  margin-top: 0rem;
+  margin-top: 3.5rem;
   margin-bottom: 3.125rem;
-}
-@media screen and (min-width: 45em) {
-  footer {
-    transform: translateY(-4rem);
-    margin-bottom: 2rem;
+  /* @media screen and (min-width: map-get($breakpoints, "tablet")){
+      transform: translateY(-4rem);
+      margin-bottom: 2rem;
   }
-}
-@media screen and (min-width: 75em) {
-  footer {
-    transform: translate(0, -10rem);
-    margin-bottom: 0;
-  }
+  @media screen and (min-width: map-get($breakpoints, "desktop")){
+      transform: translate(0, -10rem);
+      margin-bottom: 0;
+  } */
 }
 footer .logo {
   margin-bottom: 3rem;

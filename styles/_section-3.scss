@@ -23,7 +23,7 @@
         transform: translate(0, -3.6rem);
         @media screen and (min-width: map-get($breakpoints, "tablet")){
             text-align: left;
-            margin-left: 13rem;
+            margin-left: 18rem;
             margin-right: 2rem;
             margin-top: -7rem;
             //transform: translate(0, -8rem);
@@ -31,6 +31,7 @@
         @media screen and (min-width: map-get($breakpoints, "desktop")){
             margin-right: 10rem;
             margin-left: 31rem;
+            margin-top: -13rem;
             //transform: translate(0, -16rem);
         }
         .founder-headline{
@@ -55,11 +56,11 @@
             margin-inline: 1.5rem;  
             @media screen and (min-width: map-get($breakpoints, "tablet")){
                 margin-inline: 3.5rem;
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
             @media screen and (min-width: map-get($breakpoints, "desktop")){
                 margin-inline: 4.0625rem;
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
         button{
