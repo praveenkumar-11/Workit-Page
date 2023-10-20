@@ -1,6 +1,36 @@
 .section-2{
+    width: 100%;
     .curve-2{
-        //@include curve;
+        position: relative;
+        &::before{
+            @include curve;
+            height: 25rem;
+            background-color: map-get($Colors, "ghost-white");
+            z-index: -11;
+            @media screen and (min-width: 500px){
+                height: 43rem;
+                margin-top: -10rem;
+            }
+            @media screen and (min-width: map-get($breakpoints, "tablet")){
+                height: 40rem;
+            }
+            @media screen and (min-width: 768px){
+                height: 35rem;
+            }
+            @media screen and (min-width: 992px){
+                height: 33rem;
+            }
+            @media screen and (min-width: 1200px){
+                height: 22rem;
+            }
+
+            /* @media screen and (min-width: 410px){
+                height: 25rem;
+            }
+            @media screen and (min-width: 500px){
+                height: 38rem;
+            } */
+        }
         //background-color: map-get($Colors, "ghost-white");
         //background-color: red;
         //z-index: -11;
@@ -30,6 +60,11 @@
                 text-align: center;
                 flex-direction: column;
                 margin: unset;
+            }
+            .count{
+                .number-1{
+                    padding-inline: 1rem;
+                }
             }
         }
     }

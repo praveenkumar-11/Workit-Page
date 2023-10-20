@@ -9,8 +9,8 @@
   background-color: hsl(150, 100%, 63%);
 }
 
-body {
-  background-color: #808080;
+body, html {
+  overflow-x: hidden;
 }
 
 .section-1 .curve {
@@ -54,11 +54,20 @@ body {
   top: 10.625rem;
   overflow-x: hidden;
 }
+@media screen and (max-width: 45em) {
+  .section-1 .spring-1 {
+    display: none;
+  }
+}
 .section-1 .spring-2 {
   position: absolute;
-  float: right;
   left: 92vw;
   top: 23.125rem;
+}
+@media screen and (max-width: 45em) {
+  .section-1 .spring-2 {
+    display: none;
+  }
 }
 .section-1 header {
   display: flex;
@@ -138,6 +147,69 @@ body {
   margin-left: 1.2rem;
 }
 
+.section-2 {
+  width: 100%;
+}
+.section-2 .curve-2 {
+  position: relative;
+}
+.section-2 .curve-2::before {
+  content: "";
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 13.5rem;
+  background-color: hsl(273, 85%, 13%);
+  border-radius: 100%;
+  transform: scale(3.5);
+  height: 25rem;
+  background-color: hsl(276, 100%, 99%);
+  z-index: -11;
+  /* @media screen and (min-width: 410px){
+      height: 25rem;
+  }
+  @media screen and (min-width: 500px){
+      height: 38rem;
+  } */
+}
+@media screen and (min-width: 500px) and (max-width: 719px) {
+  .section-2 .curve-2::before {
+    height: 23rem;
+    transform: scale(2);
+  }
+}
+@media screen and (min-width: 45em) {
+  .section-2 .curve-2::before {
+    height: 30rem;
+    transform: scale(2);
+  }
+}
+@media screen and (min-width: 500px) {
+  .section-2 .curve-2::before {
+    height: 43rem;
+    margin-top: -10rem;
+  }
+}
+@media screen and (min-width: 45em) {
+  .section-2 .curve-2::before {
+    height: 40rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-2 .curve-2::before {
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-2 .curve-2::before {
+    height: 33rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-2 .curve-2::before {
+    height: 22rem;
+  }
+}
 .section-2 .grid {
   display: flex;
   flex-direction: column;
@@ -188,6 +260,9 @@ body {
     flex-direction: column;
     margin: unset;
   }
+}
+.section-2 .grid .col .count .number-1 {
+  padding-inline: 1rem;
 }
 
 .section-3 {

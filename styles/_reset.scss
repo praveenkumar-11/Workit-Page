@@ -7,7 +7,7 @@
 *::selection{
     background-color: map-get($Colors, "bright-green");
 }
-body{
-    background-color: #808080;
-    //overflow-x: hidden;
+body,html{
+    background-color: map-get($Colors, "white");
+    overflow-x: hidden;
 }

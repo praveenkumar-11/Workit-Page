@@ -36,20 +36,23 @@
         right: 88vw;
         top: 10.625rem;
         overflow-x: hidden;
+        @media screen and (max-width: map-get($breakpoints, "tablet")){
+            display: none;
+        }
     }
     .spring-2{
         position: absolute;
-        float: right;
         left: 92vw;
         top: 23.125rem;
-        img{
+        @media screen and (max-width: map-get($breakpoints, "tablet")){
+            display: none;
         }
     }
     header{
         display: flex;
         img{
             margin-left: 10%;//1rem;
-            margin-top: 2.5rem; 
+            margin-top: 2.5rem;
         }
         a{
             margin-right: 10%;
