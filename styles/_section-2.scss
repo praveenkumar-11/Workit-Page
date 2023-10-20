@@ -1,0 +1,71 @@
+.section-2{
+    width: 100%;
+    .curve-2{
+        position: relative;
+        &::before{
+            @include curve;
+            height: 25rem;
+            background-color: map-get($Colors, "ghost-white");
+            z-index: -11;
+            @media screen and (min-width: 500px){
+                height: 43rem;
+                margin-top: -10rem;
+            }
+            @media screen and (min-width: map-get($breakpoints, "tablet")){
+                height: 40rem;
+            }
+            @media screen and (min-width: 768px){
+                height: 35rem;
+            }
+            @media screen and (min-width: 992px){
+                height: 33rem;
+            }
+            @media screen and (min-width: 1200px){
+                height: 22rem;
+            }
+
+            /* @media screen and (min-width: 410px){
+                height: 25rem;
+            }
+            @media screen and (min-width: 500px){
+                height: 38rem;
+            } */
+        }
+        //background-color: map-get($Colors, "ghost-white");
+        //background-color: red;
+        //z-index: -11;
+        //top: 40rem;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 3.75rem;
+        gap: 2.5rem;
+        @media screen and (min-width: map-get($breakpoints, "desktop")){
+            flex-direction: row;
+        }
+        .col{
+            display: flex;
+            flex-direction: column;
+            @include column;
+            gap: 2.8125rem;
+            @media screen and (min-width: map-get($breakpoints, "tablet")){
+                text-align: left;
+                flex-direction: row;
+                align-items: center;
+                margin-inline: 5rem;
+            }
+            @media screen and (min-width: map-get($breakpoints, "desktop")){
+                text-align: center;
+                flex-direction: column;
+                margin: unset;
+            }
+            .count{
+                .number-1{
+                    padding-inline: 1rem;
+                }
+            }
+        }
+    }
+}

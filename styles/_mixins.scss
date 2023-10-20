@@ -1,0 +1,71 @@
+@mixin underlined-text{
+    color: white;
+    text-decoration: underline map-get($Colors, "bright-green") 4px;
+    text-underline-offset: 0.5rem;
+}
+@mixin button{
+    background-color: map-get($Colors, "bright-green");
+    border: 2px solid map-get($Colors, "bright-green");
+    width: 8.75rem;
+    height: 3.5625rem;
+    color: map-get($Colors, "dark-purple");
+    font-style: $manrope;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover{
+        background-color: transparent;
+        color: map-get($Colors, "bright-green");
+    }
+}
+@mixin titles{
+    font-family: $fraunces;
+    color: white;
+}
+@mixin paragraph{
+    font-family: $manrope;
+    color: map-get($Colors, "purplish-grey");
+    font-size: 1rem;
+}
+@mixin curve{
+    content: "";
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 13.5rem;
+    background-color: map-get($Colors, "dark-purple");
+    border-radius: 100%;
+    transform: scale(3.5);
+    @media screen and (min-width: 500px) and (max-width: 719px){
+        height: 23rem;
+        transform: scale(2);
+    }
+    @media screen and (min-width: map-get($breakpoints, "tablet")){
+        height: 30rem;
+        transform: scale(2);
+    }
+}
+@mixin column{ 
+    span{
+        font-family: $fraunces;
+        font-size: 1.3rem;
+        border: 1px solid map-get($Colors, "dark-purple");
+        border-radius: 50px;
+        padding: 0.5rem 0.9rem;
+    }
+    h2{
+        @include titles;
+        color: map-get($Colors, "dark-purple");
+        margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
+    }
+    p{
+        @include paragraph;
+    }
+}
+
+$breakpoints: (
+    "tablet": 45em,
+    "desktop": 75em
+);

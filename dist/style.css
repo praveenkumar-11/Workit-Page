@@ -1,0 +1,405 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*::selection {
+  background-color: hsl(150, 100%, 63%);
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+.section-1 .curve {
+  position: relative;
+  /* position: absolute;
+  width: 100%;
+  height: 40rem;
+  background-color: map-get($Colors, "dark-purple");
+  border-radius: 100%;
+  transform: scale(500%) translate(0, -17.5rem);
+  z-index: -10; 
+  @media screen and (min-width: map-get($breakpoints, "tablet")){
+  transform: scale(500%) translate(0, -15rem);
+  }*/
+}
+.section-1 .curve::before {
+  content: "";
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 13.5rem;
+  background-color: hsl(273, 85%, 13%);
+  border-radius: 100%;
+  transform: scale(3.5);
+}
+@media screen and (min-width: 500px) and (max-width: 719px) {
+  .section-1 .curve::before {
+    height: 23rem;
+    transform: scale(2);
+  }
+}
+@media screen and (min-width: 45em) {
+  .section-1 .curve::before {
+    height: 30rem;
+    transform: scale(2);
+  }
+}
+.section-1 .spring-1 {
+  position: absolute;
+  right: 88vw;
+  top: 10.625rem;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 45em) {
+  .section-1 .spring-1 {
+    display: none;
+  }
+}
+.section-1 .spring-2 {
+  position: absolute;
+  left: 92vw;
+  top: 23.125rem;
+}
+@media screen and (max-width: 45em) {
+  .section-1 .spring-2 {
+    display: none;
+  }
+}
+.section-1 header {
+  display: flex;
+}
+.section-1 header img {
+  margin-left: 10%;
+  margin-top: 2.5rem;
+}
+.section-1 header a {
+  margin-right: 10%;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.1rem;
+  color: white;
+  text-decoration: underline hsl(150, 100%, 63%) 4px;
+  text-underline-offset: 0.5rem;
+  transition: 0.2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.section-1 header a:hover {
+  color: hsl(150, 100%, 63%);
+}
+.section-1 .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.5625rem;
+  margin-bottom: 3rem;
+}
+.section-1 .hero-text h2 {
+  color: hsl(276, 100%, 99%);
+  font-family: "Fraunces", serif;
+  font-size: 2.5rem;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 45em) {
+  .section-1 .hero-text h2 {
+    font-size: 4rem;
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-1 .hero-text h2 {
+    font-size: 5rem;
+    width: 40rem;
+  }
+}
+.section-1 .hero-text span {
+  color: white;
+  text-decoration: underline hsl(150, 100%, 63%) 4px;
+  text-underline-offset: 0.5rem;
+}
+.section-1 .hero-text .hero-button {
+  background-color: hsl(150, 100%, 63%);
+  border: 2px solid hsl(150, 100%, 63%);
+  width: 8.75rem;
+  height: 3.5625rem;
+  color: hsl(273, 85%, 13%);
+  font-style: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.section-1 .hero-text .hero-button:hover {
+  background-color: transparent;
+  color: hsl(150, 100%, 63%);
+}
+.section-1 .hero img {
+  width: min(95%, 45rem);
+  margin-left: 1.2rem;
+}
+
+.section-2 {
+  width: 100%;
+}
+.section-2 .curve-2 {
+  position: relative;
+}
+.section-2 .curve-2::before {
+  content: "";
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 13.5rem;
+  background-color: hsl(273, 85%, 13%);
+  border-radius: 100%;
+  transform: scale(3.5);
+  height: 25rem;
+  background-color: hsl(276, 100%, 99%);
+  z-index: -11;
+  /* @media screen and (min-width: 410px){
+      height: 25rem;
+  }
+  @media screen and (min-width: 500px){
+      height: 38rem;
+  } */
+}
+@media screen and (min-width: 500px) and (max-width: 719px) {
+  .section-2 .curve-2::before {
+    height: 23rem;
+    transform: scale(2);
+  }
+}
+@media screen and (min-width: 45em) {
+  .section-2 .curve-2::before {
+    height: 30rem;
+    transform: scale(2);
+  }
+}
+@media screen and (min-width: 500px) {
+  .section-2 .curve-2::before {
+    height: 43rem;
+    margin-top: -10rem;
+  }
+}
+@media screen and (min-width: 45em) {
+  .section-2 .curve-2::before {
+    height: 40rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-2 .curve-2::before {
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-2 .curve-2::before {
+    height: 33rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-2 .curve-2::before {
+    height: 22rem;
+  }
+}
+.section-2 .grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3.75rem;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 75em) {
+  .section-2 .grid {
+    flex-direction: row;
+  }
+}
+.section-2 .grid .col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8125rem;
+}
+.section-2 .grid .col span {
+  font-family: "Fraunces", serif;
+  font-size: 1.3rem;
+  border: 1px solid hsl(273, 85%, 13%);
+  border-radius: 50px;
+  padding: 0.5rem 0.9rem;
+}
+.section-2 .grid .col h2 {
+  font-family: "Fraunces", serif;
+  color: white;
+  color: hsl(273, 85%, 13%);
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+.section-2 .grid .col p {
+  font-family: "Manrope", sans-serif;
+  color: hsl(271, 12%, 34%);
+  font-size: 1rem;
+}
+@media screen and (min-width: 45em) {
+  .section-2 .grid .col {
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: 5rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-2 .grid .col {
+    text-align: center;
+    flex-direction: column;
+    margin: unset;
+  }
+}
+.section-2 .grid .col .count .number-1 {
+  padding-inline: 1rem;
+}
+
+.section-3 {
+  margin-top: 7rem;
+}
+.section-3 .founder-container img {
+  width: min(80%, 25rem);
+  height: auto;
+  margin-inline: 2.4rem;
+}
+@media screen and (min-width: 45em) {
+  .section-3 .founder-container img {
+    margin-left: 3rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-3 .founder-container img {
+    margin-left: 10rem;
+  }
+}
+.section-3 .founder-text {
+  background-color: hsl(273, 85%, 13%);
+  margin-inline: 0.5rem;
+  text-align: center;
+  z-index: 2;
+  transform: translate(0, -3.6rem);
+}
+@media screen and (min-width: 45em) {
+  .section-3 .founder-text {
+    text-align: left;
+    margin-left: 18rem;
+    margin-right: 2rem;
+    margin-top: -7rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-3 .founder-text {
+    margin-right: 10rem;
+    margin-left: 31rem;
+    margin-top: -13rem;
+  }
+}
+.section-3 .founder-text .founder-headline {
+  font-family: "Fraunces", serif;
+  color: white;
+  padding-top: 2.8125rem;
+  margin-inline: 1.5rem;
+}
+@media screen and (min-width: 45em) {
+  .section-3 .founder-text .founder-headline {
+    padding-top: 3rem;
+    margin-inline: 3.5rem;
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-3 .founder-text .founder-headline {
+    padding-top: 4.6875rem;
+    margin-inline: 4.0625rem;
+    font-size: 2.8rem;
+  }
+}
+.section-3 .founder-text .founder-para {
+  font-family: "Manrope", sans-serif;
+  color: hsl(271, 12%, 34%);
+  font-size: 1rem;
+  color: hsl(276, 100%, 99%);
+  margin-top: 1.7rem;
+  margin-inline: 1.5rem;
+}
+@media screen and (min-width: 45em) {
+  .section-3 .founder-text .founder-para {
+    margin-inline: 3.5rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-3 .founder-text .founder-para {
+    margin-inline: 4.0625rem;
+    font-size: 1.2rem;
+  }
+}
+.section-3 .founder-text button {
+  background-color: hsl(150, 100%, 63%);
+  border: 2px solid hsl(150, 100%, 63%);
+  width: 8.75rem;
+  height: 3.5625rem;
+  color: hsl(273, 85%, 13%);
+  font-style: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin-top: 1.7rem;
+  width: 11.25rem;
+  margin-bottom: 2.8125rem;
+  margin-inline: 1.5rem;
+}
+.section-3 .founder-text button:hover {
+  background-color: transparent;
+  color: hsl(150, 100%, 63%);
+}
+@media screen and (min-width: 45em) {
+  .section-3 .founder-text button {
+    margin-inline: 3.5rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .section-3 .founder-text button {
+    margin-inline: 4.0625rem;
+    margin-bottom: 4.0625rem;
+  }
+}
+
+footer {
+  margin-top: 3.5rem;
+  margin-bottom: 3.125rem;
+  /* @media screen and (min-width: map-get($breakpoints, "tablet")){
+      transform: translateY(-4rem);
+      margin-bottom: 2rem;
+  }
+  @media screen and (min-width: map-get($breakpoints, "desktop")){
+      transform: translate(0, -10rem);
+      margin-bottom: 0;
+  } */
+}
+footer .logo {
+  margin-bottom: 3rem;
+}
+footer .social-media-btns {
+  display: flex;
+  gap: 1.6875rem;
+}
+footer .social-media-btns img {
+  transition: 0.2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+footer .social-media-btns img:hover {
+  filter: invert(73%) sepia(26%) saturate(928%) hue-rotate(92deg) brightness(109%) contrast(115%);
+}/*# sourceMappingURL=style.css.map */

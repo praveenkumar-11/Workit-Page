@@ -1,0 +1,30 @@
+footer{
+    margin-top: 3.5rem;
+    margin-bottom: 3.125rem;
+    /* @media screen and (min-width: map-get($breakpoints, "tablet")){
+        transform: translateY(-4rem);
+        margin-bottom: 2rem;
+    }
+    @media screen and (min-width: map-get($breakpoints, "desktop")){
+        transform: translate(0, -10rem);
+        margin-bottom: 0;
+    } */
+    .logo{
+        margin-bottom: 3rem;
+        img{
+
+        }
+    }
+    .social-media-btns{
+        display: flex;
+        gap: 1.6875rem;
+        img{
+            transition: 0.2s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            &:hover{
+                filter: invert(73%) sepia(26%) saturate(928%) hue-rotate(92deg) brightness(109%) contrast(115%);
+            }
+        }
+        
+    }
+}
