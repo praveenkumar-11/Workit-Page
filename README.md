@@ -22,8 +22,8 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/praveenkumar-11/Workit-Page/)
-- Live Site URL 1: [Github Pages](https://github.com/praveenkumar-11/Workit-Page)
-- Live Site URL 2: [Cloudflare](https://workit-landing-page-25s.pages.dev/)
+- Live Site URL 1: [Cloudflare](https://workit-landing-page-25s.pages.dev/)
+- Live Site URL 2: [Github Pages](https://praveenkumar-11.github.io/Workit-Page/)
 
 ## My process
 
